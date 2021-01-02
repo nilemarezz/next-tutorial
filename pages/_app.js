@@ -1,7 +1,7 @@
 import '../styles/globals.css'
 import Layout from '../src/Layout'
 import Head from 'next/head'
-import { UserContext } from '../src/context/Usercontext'
+import IndexContext from '../src/context/IndexContext'
 function MyApp({ Component, pageProps }) {
   return (
     <>
@@ -11,9 +11,9 @@ function MyApp({ Component, pageProps }) {
       </Head>
 
       <Layout>
-        <UserContext>
+        <IndexContext>
           <Component {...pageProps} />
-        </UserContext>
+        </IndexContext>
       </Layout>
     </>
   )
